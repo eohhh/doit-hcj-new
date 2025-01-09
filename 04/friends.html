@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>친한 친구들 목록</title>
+</head>
+
+<body>
+  <header>
+    <h3>친한 친구 목록</h3>
+  </header>
+  <main>
+    <!-- 표(table) 3명 친구의 연락처, 주소 -->
+    <table border="2">
+      <!-- 타이틀 thead -->
+      <thead>
+        <tr>
+          <!-- 행을 의미 -->
+          <th>친구이름</th>
+          <th>연락처</th>
+          <th>주소</th>
+          <th>사진</th>
+        </tr>
+      </thead>
+      <!-- 데이터 tbody -->
+      <tbody>
+        <tr>
+          <td>정상윤</td>
+          <td>010-0000-0000</td>
+          <td>대구광역시</td>
+          <td rowspan="2"><img src="friends.PNG" width="100px" , height="100"></td>
+        </tr>
+        <tr>
+          <td>이병찬</td>
+          <td>010-0111-1111</td>
+          <td colspan="2">대구 달서구</td>
+          <!-- <td><img src="friends2.PNG" width="100", alt="ㅇㅇ"></td> -->
+        </tr>
+        <tr>
+          <td>김진성</td>
+          <td>010-1111-1111</td>
+          <td>대구 북구</td>
+          <td><img src="friends.PNG" width="100" height="100"></td>
+        </tr>
+      </tbody>
+    </table>
+    <a href="resume.html">내 정보 이동</a>
+    <img src="imge.PNG" width="50px">
+  </main>
+  <footer></footer>
+</body>
+
+</html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>웹에서 사용하는 이미지 파일 형식</title>
+  <style>
+    th {
+      background-color: rgb(165, 120, 189);
+    }
+  </style>
+</head>
+
+<body>
+<header>
+  <h3>웹에서 사용하는 이미지 파일 형식</h3>
+</header>
+<main>
+  <table border="2">
+    <colgroup>
+      <col style="width: 200px; color:red;">
+      <col style="width: 250px;">
+      <col style="width: 250px;">
+    </colgroup>
+  <thead>
+    <tr>
+      <th style="width: 50px", height="30">종류</th>
+      <th style="width: 300px;">설명</th>
+      <th>용도</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>GIF</td>
+      <td>간단한 애니메이션을 지원합니다.</td>
+      <td>간단한 애니메이션이나 아이콘</td>
+    </tr>
+    <tr>
+      <td>JPG/JPEG</td>
+      <td>고해상도 사진을 작은파일 크기로 압축합니다</td>
+      <td>사진이나 그래픽</td>
+    </tr>
+    <tr>
+      <td>PNG</td>
+      <td>투명 배경을 지원합니다</td>
+      <td>화질 저하 없이 투명 배경이 필요한 그래픽</td>
+    </tr>
+    <tr>
+      <td>WebP</td>
+      <td>GIF와 JPG,PNG의 장점을 하나로 결합한 이미지 형식입니다.</td>
+      <td>고해상도의 이미지를 작은파일 크기로 제공할 때</td>
+    </tr>
+  </tbody>
+</main>
+<footer>
+
+</footer>
+</body>
+</table>
+</html>

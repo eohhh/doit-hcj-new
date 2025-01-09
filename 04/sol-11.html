@@ -13,6 +13,22 @@
     td:last-child{
       width:200px;
     }
+
+    button {
+      width: 80px;
+      height: 25px;
+    }
+
+    input {
+      padding: 10px;
+      background-color: yellow;
+    }
+
+    select {
+      padding: 5px;
+      background-color: gray;
+    }
+
   </style>
 </head>
 <body>
@@ -21,20 +37,32 @@
     <tr>
       <th rowspan="3">개인정보</th>
       <th>이름</th>
-      <td></td>
+      <td><input type="text"></td>
     </tr>
     <tr>
       <th>학과/학번</th>
-      <td></td>
+      <td><input type="text"></td>
     </tr>
     <tr>
       <th>연락처</th>
-      <td></td>
+      <td><input type ="text"></td>
     </tr>
     <tr>
       <th>지원 분야</th>
-      <td colspan="2"></td>
-    </tr>    
+      <td colspan="2" align="center">
+         <select>
+          <option>방송진행</option>
+          <option>프로듀서</option>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="3" align="center">
+      <select>
+        <button>지원하기</button>
+      </select>
+      </td>
+    </tr>
   </table>
 </body>
 </html>

@@ -4,12 +4,41 @@
   <meta charset="UTF-8">
   <title>상품 소개 페이지</title>
   <!-- 글자 크기 지정하기 - 절대 크기 -->
-  
+  <style>
+       @import url('https://fonts.googleapis.com/css2?family=Gamja+Flower&display=swap');
+
+       @import url('https://fonts.googleapis.com/css2?family=Gamja+Flower&family=Wallpoet&display=swap');
+
+    body {
+      font-size: 15px;
+    }
+    h1 {
+      font-size: 30px;
+    }
+    p:nth-of-type(1){
+      font-size: 2em;
+      color: green;
+    }
+    p:nth-of-type(2){
+      font-weight: 700;
+      font-style: italic;
+      font-family: "Wallpoet";
+    }
+    p:nth-of-type(3){
+      font-family: "Gamja Flower", serif;
+      font-weight: 400;
+      font-style: normal;
+    }
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
 </head>
 <body>
+  <i class="fa-solid fa-cart-flatbed"></i>
   <h1>레드향</h1>
-  <p>껍질에 붉은 빛이 돌아 레드향이라 불린다.</p>
+  <p><i class="fa-solid fa-toggle-on"></i>껍질에 붉은 빛이 돌아 레드향이라 불린다.</p>
   <p>레드향은 한라봉과 귤을 교배한 것으로</p>
-  <p>일반 귤보다 2~3배 크고, 과육이 붉고 통통하다.</p>      
+  <p>일반 귤보다 2~3배 크고, 과육이 붉고 통통하다.</p>
+  <button type="reset"><i class="fa-solid fa-toggle-on"></i>클릭하기</button> 
 </body>
 </html> 
