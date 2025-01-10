@@ -1,28 +1,46 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
   <meta charset="UTF-8">
   <title>고급 선택자</title>
   <style>
     body {
-      background-color:#eee;
+      background-color: #eee;
     }
+
     section {
-      width:600px;
-      margin:20px auto;
+      width: 600px;
+      margin: 20px auto;
     }
+
     p {
-      width:500px;
-      padding:10px;
-      background-color:#fff;
-      border:1px solid #ccc;
-      line-height:2;
+      width: 500px;
+      padding: 10px;
+      background-color: #fff;
+      border: 1px solid #ccc;
+      line-height: 2;
     }
+
+    section>p {
+      background: yellow;
+    }
+
+    h1+p {
+      color: green;
+    }
+    h1~p {
+      font-size: 30px;
+    }
+
+
 
     /* Do it! section 요소의 모든 하위 p 요소의 스타일 바꾸기 */
-
+    /* section p : sectiong 하위 모든 p 선택. */
+    /* section>p : section 자식요소 p 선택. */
   </style>
 </head>
+
 <body>
   <section>
     <h1>예약 방법 & 사용 요금</h1>
@@ -30,6 +48,8 @@
     <div>
       <p>가족실(2~4인) : 60,000원/일</p>
       <p>도미토리(4인 공용) : 25,000원/일</p>
-  </section>   
+    </div>
+  </section>
 </body>
+
 </html>

@@ -1,0 +1,13 @@
+#signup label {
+  float: left;
+  /* background: red; */
+  font-size: 13px;
+  width: 110px;
+}
+
+.loginfo ul {
+  list-style-type: square;
+}
+.loginfo2 ul {
+  list-style-type: upper-alpha;
+}

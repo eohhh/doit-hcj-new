@@ -21,7 +21,10 @@
 		}
 
 		/* Do it! class 속성 값에 button이 포함된 요소에 스타일 지정하기 */
-
+		ul a[class ~= button] {
+			box-shadow: rgba(87, 212, 48, 0.692) 4px 4px;
+			border-radius: 5px;
+		}
 </style>
 </head>
 <body>
@@ -31,5 +34,6 @@
 		<li><a href="#" class="button">메뉴 3</a></li>
 		<li><a href="#" class="flat button" >메뉴 4</a></li>
 	</ul>
+	<a href="#" class="button">메뉴5</a>
   </body>
  </html>

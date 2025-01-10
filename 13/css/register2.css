@@ -11,6 +11,7 @@ body {
 #signup {
 	background:#fff;
 	border:1px solid #222;
+	box-shadow: 15px 15px 30px 20px rgb(224, 93, 122);
 	border-radius: 5px;
 	padding: 20px;
 	width: 400px;	
@@ -44,10 +45,36 @@ body {
 	letter-spacing: 1px;
 	margin: auto;
 	padding: 7px 25px;
+	box-shadow: 5px 5px 25px 5px yellowgreen;
 }
 
 #signup label {
 	float: left;  /* 왼쪽으로 배치 */
 	font-size: 13px;  /* 글자 크기 - 13px */
 	width: 110px;  /* 너비 - 110px */
+}
+
+#signup input[type=text], #signup input[type=email], #signup input[type=tel], 
+#signup input[type=password] {
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	font-size: 13px;
+	padding: 5px;
+	width: 200px;
+	/* height: 100px; */
+}
+#signup input[required] {
+	border: 1px red solid;
+}
+
+#signup input[readonly] {
+	border: none;
+}
+
+fieldset.eee {
+	border: 1px solid #222;
+	border-radius: 3px;
+	padding: 3px;
+	
+	margin: none;
 }

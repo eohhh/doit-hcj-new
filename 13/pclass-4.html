@@ -10,6 +10,8 @@
       justify-content: center;
       align-items: center;
       height: 100vh;
+      background: url(images/cat.jpg);
+      border-radius: 50%;
     }
     .container {
       width: 600px;
@@ -23,9 +25,41 @@
       border-radius: 5px;
       padding: 20px;
     }
-
-    /* Do it! 가상 선택자를 사용해 항목 선택하기 */
-
+    .container :last-child {
+      background-color: #2cf;
+    }
+    /* Do it! 가상 선택자를 사용해 항목 선택하기 3~5 */
+    .container :nth-child(n+3):nth-child(-n+5) {
+      background-color: red;
+      box-shadow: 5px 5px 5px 5px rgb(209, 90, 179);
+    }
+    .container :nth-of-type(1) {
+      background-color: yellow;
+      box-shadow: 15px 15px 15px 15px green;
+      font-size: 200px;
+    }
+    .container :nth-of-type(2) {
+      background-color: green;
+      box-shadow: 5px 5px 5px 5px rgb(209, 90, 179);
+    }
+    .container :nth-of-type(3) {
+      background-color: black;
+      box-shadow: 5px 5px 5px 5px rgb(209, 90, 179);
+    }
+    .container :nth-of-type(6) {
+      background-color: black;
+      box-shadow: 10px 10px 10px 10px rgb(142, 204, 70);
+      color: white;
+      font-size: 100px;
+    }
+    .container :nth-of-type(7) {
+      background-color: gray;
+      box-shadow: 5px 5px 5px 5px rgb(209, 90, 179);
+    }
+    .container :nth-of-type(8) {
+      background-color: darkkhaki;
+      box-shadow: 5px 5px 5px 5px rgb(209, 90, 179);
+    }
   </style>
 </head>
 <body>

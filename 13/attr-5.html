@@ -19,7 +19,15 @@
 		}
 
 		/* Do it! 속성 값의 시작 부분이 일치하는 요소에 스타일 지정하기 */
-
+[title = eng] {
+	background: url(images/us.png) no-repeat left center;
+}
+a[title ^= jap] {
+	background: url(images/jp.png) no-repeat left center;
+}
+a[title ^= chi] {
+	background: url(images/ch.png) no-repeat left center;
+}
 </style>
 </head>
 
@@ -27,6 +35,8 @@
 	<ul>
 		<li>외국어 서비스 : </li>
 		<li><a href="#" title="english">영어</a></li>
+		<li><a href="#" title="eng-lish">영어</a></li>
+		<li><a href="#" title="eng">영어</a></li>
 		<li><a href="#" title="japanese">일본어</a></li>
 		<li><a href="#" title="chinese">중국어</a></li>
 	</ul>

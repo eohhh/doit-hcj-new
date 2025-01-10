@@ -26,7 +26,20 @@
   }
 
   /* Do it! 가상 선택자를 사용해 링크 스타일 지정하기 */
-
+  a:link, a:visited {
+    display: block;
+    font-size: 14px;
+    color: #000;
+    text-decoration: none;
+  }
+  a:hover, a:focus {
+    background-color: #222;
+    color: #fff;
+  }
+  a:active {
+    background-color: red;
+  }
+  
 </style>
 </head>
 
