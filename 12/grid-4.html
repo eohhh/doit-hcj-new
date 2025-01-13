@@ -9,7 +9,6 @@
         width:800px;
         border: 1px solid #ccc;
         display:grid;        
-        grid-template-columns: repeat(5, minmax(100px, 1fr));
         margin-bottom: 20px;
       }
       /* Do it! auto-fit과 auto-fill을 사용해 배치하기 */
@@ -28,6 +27,12 @@
       }
       .items:nth-child(even){
         background-color:#00b7ff;
+      }
+      .container-1 {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+      }
+      .container-2 {
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
       }
     </style>
 

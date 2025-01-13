@@ -9,7 +9,27 @@
     .pic img {
       width: 100%; /* 이미지가 .pic 에 가득차도록 */
       height: auto; /* 이미지의 비율을 유지 */
+      display: flex;
     } 
+    .container {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+    .pic {
+      flex-basis: 32%;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1024px) {
+      .pic {
+        flex-basis: 49%;
+      }
+    }
+    @media (max-width: 768px) {
+      .pic {
+        flex-basis: 100%;
+      }
+    }
   </style>
 </head>
 <body>

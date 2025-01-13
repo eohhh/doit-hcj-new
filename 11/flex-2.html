@@ -11,18 +11,39 @@
       background-color:#eee;
       border:1px solid #222;
       margin-bottom:30px;
+      color: black;
     }
     .box {
       padding:5px 45px;
       margin:5px;   
 	  	width:80px;
       background-color:#222;   
-    }                
-    p {
+    }        
+    .box:nth-child(odd) {
+      background-color: yellow;
+      color: black;
+      text-align: center;
+    }        
+    .box:nth-child(even) {
+      background-color: green;
+      color: black;
+      text-align: center;
+      font-style:oblique;
+    }
+    /* p {
       color:#fff;
       text-align: center;
-    }
+    } */
     /* Do it! 줄바꿈을 지정하는 #opt1 ~ #opt3 스타일 만들기 */
+    #opt1 {
+      flex-wrap: nowrap;
+    }
+    #opt2 {
+      flex-wrap: wrap;
+    }
+    #opt3 {
+      flex-wrap: wrap-reverse;
+    }
 
   </style>
 </head>

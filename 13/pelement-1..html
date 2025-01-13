@@ -21,6 +21,23 @@
     }
 
     /* Do it! 단락의 첫번째 글자에 스타일 지정하기 */
+    p::first-letter {
+      font-size: 2em;
+      font-weight: bold;
+      color: red;
+      background: gold;
+      border-radius: 50%;
+    }
+    h1::before {
+      content: "*";
+      color: red;
+      margin-right: 5px;
+    }
+
+    h1::after {
+      content:"💖";
+      margin-left: 10px;
+    }
     
   </style>
 </head>
@@ -28,6 +45,9 @@
   <div class="container">
     <h1>CSS 가상 요소</h1>
     <p>가상 요소를 사용하면 CSS로 시각적 변화를 줄 수 있습니다. 이는 성능을 저하시키지 않으면서 웹 페이지를 꾸밀 수 있는 효율적인 방법입니다.</p>
+    <h1>CSS 가상 요소</h1>
+    <h1>CSS 가상 요소</h1>
+
   </div>
 </body>
 </html>
