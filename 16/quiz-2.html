@@ -21,6 +21,18 @@
 </head>
 <body>
 	<h2>3의 배수 찾기</h2>
+	<script>
+		let num = parseInt(prompt('몇까지 3의 배수를 찾을까요?'));
+		let count = 0;
+		if (num !== null) {
+			for (let i = 1; i < num; i++) {
+				if(i % 3 == 0) {
+					count++;
+					console.log(count);
+				}
+			}
+		}
+	</script>
 
 </body>
 </html>
